@@ -50,15 +50,14 @@ def server_connect():
 	write_to_log("Asking for server credentials.")
 	global server_Name
 	global server_Token
-	while server_Name is None:
-		server_Name = raw_input("Enter Server Name: ")
-	while server_Token is None:
-		server_Token = raw_input("Enter Server Token: ")
+	server_Name = raw_input("Enter Server Name: ")
+	server_Token = raw_input("Enter Server Token: ")
 
 	return server_Name, server_Token
 
-def server_image_upload():
-	#Uploads image from client to server
+def server_image_upload(fileToUpload):
+	#Saves file locally and uploads to google drive
+	#liam 
 	print "TODO"
 
 def main():
